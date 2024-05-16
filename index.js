@@ -5,7 +5,7 @@ const forge = require("node-forge");
 const options = {
   key: fs.readFileSync("server-key.pem"), // Path to your server's private key
   cert: fs.readFileSync("server-cert.pem"), // Path to your server's certificate
-  ca: fs.readFileSync("server-ca.cer.cer"), // Path to the CA certificate used to verify client certificates
+  ca: fs.readFileSync("server-ca.cer"), // Path to the CA certificate used to verify client certificates
   requestCert: true, // Request clients to provide certificates
   rejectUnauthorized: false, // Reject connections from clients without a valid certificate
 };
